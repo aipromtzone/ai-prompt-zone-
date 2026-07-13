@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Prompts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<div class="logo">🤖 AI Prompt Zone</div>
+<div class="menu">
+<a href="index.html">Home</a>
+<a href="video.html">Video</a>
+</div>
+</nav>
+
+<div class="hero">
+<h1>🎬 Video Prompts</h1>
+<p>Professional AI Video Prompts</p>
+</div>
+
+<section class="prompts">
+
+<div class="prompt-box">
+<h2>Cinematic Prompt</h2>
+<p>Create a cinematic 4K movie scene with dramatic lighting, realistic camera movement, shallow depth of field and ultra realistic quality.</p>
+<button onclick="copyPrompt(this)">Copy Prompt</button>
+</div>
+
+<div class="prompt-box">
+<h2>Commercial Ad Prompt</h2>
+<p>Create a luxury product advertisement with studio lighting, slow motion, premium look and 8K quality.</p>
+<button onclick="copyPrompt(this)">Copy Prompt</button>
+</div>
+
+</section>
+
+<script>
+function copyPrompt(button){
+let text = button.parentElement.querySelector("p").innerText;
+navigator.clipboard.writeText(text);
+button.innerText="Copied ✅";
+setTimeout(function(){
+button.innerText="Copy Prompt";
+},2000);
+}
+</script>
+
+</body>
+</html>

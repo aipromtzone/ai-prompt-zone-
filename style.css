@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#080010;
+    color:#fff;
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#16002b;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#b84dff;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:15px;
+}
+
+.hero{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.hero h1{
+    color:#b84dff;
+    margin-bottom:10px;
+}
+
+.hero p{
+    margin-bottom:20px;
+}
+
+.hero input{
+    width:300px;
+    max-width:90%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+}
+
+.prompts{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    padding:30px;
+}
+
+.prompt-box{
+    background:#16002b;
+    width:300px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(184,77,255,.4);
+    transition:.3s;
+}
+
+.prompt-box:hover{
+    transform:translateY(-8px);
+}
+
+.prompt-box h2{
+    margin-bottom:10px;
+}
+
+.prompt-box p{
+    margin-bottom:15px;
+    line-height:1.6;
+}
+
+button{
+    background:#b84dff;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#16002b;
+    margin-top:40px;
+}
+
+@media(max-width:600px){
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .menu{
+        text-align:center;
+    }
+
+    .menu a{
+        display:inline-block;
+        margin:5px;
+    }
+
+    .prompt-box{
+        width:90%;
+    }
+}

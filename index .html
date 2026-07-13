@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Zone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🚀 AI Prompt Zone</h1>
+  <p>Master the Best AI Prompts for ChatGPT, Image & Video AI</p>
+
+  <input type="text" placeholder="🔍 Search AI Prompts...">
+
+  <div class="hero-buttons">
+    <button>🚀 Explore Prompts</button>
+    <button>📩 Join Community</button>
+  </div>
+</header>
+
+<div class="categories">
+  <button>🎨 Image</button>
+  <button>🎬 Video</button>
+  <button>💬 ChatGPT</button>
+  <button>🖼️ Logo</button>
+</div>
+
+<div class="features">
+  <div class="feature-card">💡 Premium AI Prompts</div>
+  <div class="feature-card">🎬 AI Video Prompts</div>
+  <div class="feature-card">🖼️ AI Image Prompts</div>
+  <div class="feature-card">💼 Business Prompts</div>
+</div>
+
+<div class="card">
+  <h2>🎬 Cinematic Video Prompt</h2>
+
+  <p id="prompt1">
+Create an ultra realistic cinematic 4K video with dramatic lighting, smooth camera movement, realistic colors, movie-quality visuals, HDR lighting and professional color grading.
+  </p>
+
+  <button onclick="copyPrompt()">📋 Copy Prompt</button>
+</div>
+
+<footer>
+  <p>© 2026 AI Prompt Zone | Built with ❤️ by Saddam</p>
+</footer>
+
+<script>
+function copyPrompt() {
+  let text = document.getElementById("prompt1").innerText;
+  navigator.clipboard.writeText(text);
+  alert("✅ Prompt Copied Successfully!");
+}
+</script>
+
+</body>
+</html>
