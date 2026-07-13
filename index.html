@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Zone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<div class="logo">🤖 AI Prompt Zone</div>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">Video</a>
+<a href="#">Image</a>
+<a href="#">Writing</a>
+</div>
+</nav>
+
+<header class="hero">
+<h1>AI Prompt Library</h1>
+<p>Find the best AI prompts for images, videos and writing.</p>
+
+<input type="text" placeholder="Search prompts...">
+</header>
+
+<section class="prompts">
+
+<div class="prompt-box">
+<h2>🎬 Video Prompt</h2>
+
+<p>Create a cinematic 4K video with dramatic lighting, realistic camera movement and movie style color grading.</p>
+
+<button onclick="copyPrompt(this)">Copy Prompt</button>
+</div>
+
+<div class="prompt-box">
+<h2>🖼 Image Prompt</h2>
+
+<p>Ultra realistic portrait, DSLR photography, 8K resolution, cinematic lighting, highly detailed face.</p>
+
+<button onclick="copyPrompt(this)">Copy Prompt</button>
+</div>
+
+<div class="prompt-box">
+<h2>✍️ Writing Prompt</h2>
+
+<p>Write a powerful emotional story with an unexpected ending and memorable characters.</p>
+
+<button onclick="copyPrompt(this)">Copy Prompt</button>
+</div>
+
+</section>
+<footer>
+    <p>© 2026 AI Prompt Zone | Create With AI 🚀</p>
+</footer>
+
+<script>
+function copyPrompt(button){
+    let text = button.parentElement.querySelector("p").innerText;
+    navigator.clipboard.writeText(text);
+
+    button.innerText = "Copied ✅";
+
+    setTimeout(function(){
+        button.innerText = "Copy Prompt";
+    }, 2000);
+}
+</script>
+
+</body>
+</html>
